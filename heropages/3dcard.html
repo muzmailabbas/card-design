@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+  
+
+
+main {
+  width: 50%;
+  min-width: 1000px;
+  background: linear-gradient(90deg, rgb(230, 0, 0) 0%, rgb(22, 22, 20) 100%);
+  border-radius: 30px;
+  position: relative;
+  margin: 19% 23%;
+}
+
+h3, h1, p {
+  margin: 0 30px;
+}
+
+h3 {
+  margin-top: 30px;
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 55px;
+}
+
+p {
+  margin: 30px;
+  font-weight: 900;
+  color: #000000;
+}
+
+button {
+  padding: 20px 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#downloadBtn {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#downloadBtn::before, #downloadBtn::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 30px;
+  background-color: transparent;
+}
+
+#downloadBtn::before {
+  box-shadow: 0 -30px 0 0 white;
+  top: 100%;
+  left: 0;
+  border-top-left-radius: 30px;
+}
+
+#downloadBtn::after {
+  box-shadow: 0 30px 0 0 white;
+  top: -60px;
+  left: 0;
+  border-bottom-left-radius: 30px;
+}
+
+#chameleon {
+  position: absolute;
+  bottom: 0px;
+  right: -67px;
+  height: 450px;
+  filter: drop-shadow(2px 2px 20px rgb(230, 0, 0));
+  width: 600px;
+  background-image: url("https://nextash.com/assets/nextash_v2/images/logos/logo.png");
+  background-repeat: no-repeat;
+  background-size: auto 450px;
+}
+@media (max-width: 1000px) {
+  body {
+    transform: scale(0.5);
+  }
+}
+</style>
+<body>
+    <main>
+        <h3>Welcome to </h3>
+        <h1>NexTash</h1>
+        <button id="downloadBtn">Home</button>
+        <button>More</button>
+        <p>PARTNER FOR <br> YOUR DIGITAL FUTURE</p>
+        <div id="chameleon"></div>
+      </main>
+      
+</body>
+</html>
